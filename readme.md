@@ -1,7 +1,7 @@
 🐟 codestats-fish
 =================
 
-A simple fish *plugin* for [Code::Stats](https://codestats.net/).
+A simple [Fish shell](https://fishshell.com/) *plugin* for [Code::Stats](https://codestats.net/).
 Currently only counts characters from executed commands (sheesh)
 
 Inspired a bit by the [Code::Stats plugin for ZSH](https://gitlab.com/code-stats/code-stats-zsh)
