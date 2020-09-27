@@ -18,3 +18,12 @@ With [fundle](https://github.com/danhper/fundle):
 ```sh
 fundle plugin nyaa8/codestats-fish
 ```
+
+Configuration
+-------------
+
+Set `CODESTATS_API_KEY` to a token
+```sh
+set -U CODESTATS_API_KEY "SFMyNTY.OEotWWdnPT0jI01qaz0.X0wVEZquh8Ogau1iTtBihYqqL71FD8N6p5ChQiIpaxQ"
+```
+
