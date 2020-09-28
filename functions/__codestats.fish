@@ -8,11 +8,7 @@ if test -z $CODESTATS_API_URL
 	set -U CODESTATS_API_URL "https://codestats.net/api/my/pulses"
 end
 
-function __codestats__gather_runner -d "Runs __codestats_gather as a background job (maybe it's faster this way)" -e fish_postexec
-	__codestats__gather $argv &
-end
-
-function __codestats__gather -d "Gathers XP" 
+function __codestats__gather -d "Gathers XP" -e fish_postexec
 	set -U __codestats_xp (math $__codestats_xp + (string length $argv))
 
 	if test $__codestats_pulse_lock -eq 0
