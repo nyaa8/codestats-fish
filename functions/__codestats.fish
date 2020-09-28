@@ -2,7 +2,7 @@ set -U __codestats_xp (math $__codestats_xp + 0)
 set -U __codestats_last_pulse 0
 set -U __codestats_pulse_lock 0 # false
 
-set __codestats_version "0.1.0"
+set __codestats_version "0.1.1"
 
 if test -z $CODESTATS_API_URL
 	set -U CODESTATS_API_URL "https://codestats.net/api/my/pulses"
