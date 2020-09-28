@@ -39,7 +39,7 @@ function __codestats__pulse -d "Sends accumulated XP"
 	curl \
 		--header "Content-Type: application/json" \
 		--header "X-API-Token: $CODESTATS_API_KEY" \
-		--user-agent "codestats-fish/$__codestats_version"
+		--user-agent "codestats-fish/$__codestats_version" \
 		--data "$payload" \
 		--request POST \
 		--silent \
