@@ -31,6 +31,6 @@ Configuration
 
 Set `CODESTATS_API_KEY` to a token
 ```sh
-set -U CODESTATS_API_KEY "SFMyNTY.OEotWWdnPT0jI01qaz0.X0wVEZquh8Ogau1iTtBihYqqL71FD8N6p5ChQiIpaxQ"
+set -Ux CODESTATS_API_KEY "SFMyNTY.OEotWWdnPT0jI01qaz0.X0wVEZquh8Ogau1iTtBihYqqL71FD8N6p5ChQiIpaxQ"
 ```
 
