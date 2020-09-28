@@ -21,6 +21,11 @@ With [fundle](https://github.com/danhper/fundle):
 fundle plugin nyaa8/codestats-fish
 ```
 
+Requirements
+------------
+* cURL
+* fish 🙂
+
 Configuration
 -------------
 
