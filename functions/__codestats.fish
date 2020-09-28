@@ -13,10 +13,8 @@ function __codestats__gather -d "Gathers XP" -e fish_postexec
 
 	if test $__codestats_pulse_lock -eq 0
 		if test (date +%s) -gt (math $__codestats_last_pulse + 30)
-			if test $__codestats_xp -gt 0
-				set -U __codestats_pulse_lock 1
-				__codestats__pulse &
-			end
+			set -U __codestats_pulse_lock 1
+			__codestats__pulse &
 		end
 	end
 end
