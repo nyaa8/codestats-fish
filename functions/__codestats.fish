@@ -34,7 +34,7 @@ function __codestats__pulse -d "Sends accumulated XP"
 	end
 
 	set -l datetime (date "+%Y-%m-%dT%T%z")
-	set -l payload (printf '{ "coded_at": "%s", "xps": [{ "language": "Fish shell", "xp": %s }]}' $datetime $__codestats_xp)
+	set -l payload (printf '{ "coded_at": "%s", "xps": [{ "language": "Terminal (Fish)", "xp": %s }]}' $datetime $__codestats_xp)
 
 	curl \
 		--header "Content-Type: application/json" \
