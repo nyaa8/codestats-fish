@@ -2,10 +2,10 @@ set -U __codestats_xp (math $__codestats_xp + 0)
 set -U __codestats_last_pulse 0
 set -U __codestats_pulse_lock 0 # false
 
-set __codestats_version "0.1.2"
+set __codestats_version "0.2.0"
 
 if test -z $CODESTATS_API_URL
-	set -U CODESTATS_API_URL "https://codestats.net/api/my/pulses"
+	set -Ux CODESTATS_API_URL "https://codestats.net/api"
 end
 
 function __codestats__gather -d "Gathers XP" -e fish_postexec
@@ -39,7 +39,7 @@ function __codestats__pulse -d "Sends accumulated XP"
 		--silent \
 		--output /dev/null \
 		--write-out "%{http_code}" \
-		"$CODESTATS_API_URL" \
+		"$CODESTATS_API_URL/my/pulses" \
 		| __codestats__response
 end
 

@@ -29,8 +29,12 @@ Requirements
 Configuration
 -------------
 
-Set `CODESTATS_API_KEY` to a token
+Set `CODESTATS_API_KEY` to a token:
 ```sh
 set -Ux CODESTATS_API_KEY "SFMyNTY.OEotWWdnPT0jI01qaz0.X0wVEZquh8Ogau1iTtBihYqqL71FD8N6p5ChQiIpaxQ"
 ```
 
+Set `CODESTATS_API_URL` if you want to use a different instance:
+```sh
+set -Ux CODESTATS_API_URL "https://beta.codestats.net/api"
+```
