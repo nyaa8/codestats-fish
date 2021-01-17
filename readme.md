@@ -12,7 +12,7 @@ Installation
 Using [fisher](https://github.com/jorgebucaran/fisher):
 
 ```sh
-fisher add nyaa8/codestats-fish
+fisher install nyaa8/codestats-fish
 ```
 
 With [fundle](https://github.com/danhper/fundle):
